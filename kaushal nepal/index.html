@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Headphones</title>
+
+<style>
+	
+	.box{
+		margin:auto;
+		width:1140px;
+		
+
+	}
+	.container{
+		position: fixed;
+		top:0;
+		min-width:1140px;
+		height:120px;
+		padding-top: 20px;
+		margin-bottom: 10px;
+		background-color: #2a0942;
+		z-index: 100;
+	}
+	.logo{
+		
+		margin-top: -70px;
+	}
+	
+	
+	
+	ul{
+		float:right;
+		list-style: none;
+		margin-top: -120px;
+		padding-right: 40px;
+		margin-right: 20px;
+
+
+	}
+
+	ul li {
+		display:inline-block;
+		
+	}
+	ul li a{
+		text-decoration: none;
+		color:#cbcfc8;
+		padding:5px 20px;
+	}
+	ul li a:hover{
+		background-color:#f5f5f5;
+		color:#000;
+	}
+
+	ul li.active a{
+		background-color: #9f9f9f;
+		color:#000;
+	}
+
+	.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+	.dropdown{
+		position:relative;
+		display:inline-flex;
+	}
+	
+	.dropdown-items{
+		display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 180px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	top:30px;
+	}
+	.dropdown-items a{
+		color:black;
+		padding:12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+	}
+	.dropdown-items a:hover{
+		background-color:#ffffff;
+	}
+	.dropdown:hover .dropdown-items{
+		display:block;
+	}
+	.slideshowcontainer{
+		margin-top: 110px;
+		margin-left: 170px;
+	}
+	.newcontain1{
+	 
+		width:1140px;
+		margin:auto;
+		height:300px;
+		
+		
+	}
+
+
+	.newcontain2{
+	 
+		width:1140px;
+		margin:auto;
+		height:300px;
+
+		
+	}
+
+
+	.newcontain3{
+	 
+		width:1140px;
+		margin:auto;
+		height:300px;
+		
+	}
+
+
+	.newcontain4{
+	 
+		width:1140px;
+		margin:auto;
+		margin-top: -300px;
+		
+		
+	}
+		.ourproject{
+		margin-left: 60px;
+	}
+	.aboutus{
+		margin-left: 60px;
+		margin-top: 170px;
+
+	}
+	.image1{
+	position: absolute;
+	margin: left 400px; ;
+	
+
+	
+	}
+	
+	.smallheader{
+		margin-top: 70px;
+	}
+	.smallheader:hover{
+		transform: scale(1.2);
+	}
+	.smallheader1{
+		padding-top: 160px;
+	}
+	.banner{
+	padding-top: 250px;
+	margin-left: 70px;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #2a0942;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+ 
+}
+
+input[type=submit]:hover {
+  background-color: #2a0942;
+}
+
+.container1 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.footer{ 
+		width:1140px;
+		margin:auto;
+		height:300px;
+		background-color: #2a0942;
+}
+.line{
+	position:absolute;
+	border:2px solid #cbcfc8;
+	height:220px;
+	margin-left: 20px;
+	margin-top: 50px;
+}
+.footerlogo{
+	margin-left: 60px;
+	margin-bottom: 20px;
+}
+	ul{
+		list-style: none;
+		margin-top: -140px;
+		padding-right: 10px;
+		margin-right: 5px;
+
+
+	}
+
+	ul ol {
+		display:inline-block;
+		
+	}
+	ul ol a{
+		text-decoration: none;
+		color:#cbcfc8;
+		padding:15px 20px;
+	}
+	ul ol a:hover{
+		background-color:#f9120e;
+		color:#000;
+	}
+
+	ul ol.active a{
+		background-color: #2a0942;
+		color:#000;
+	}
+	.menu{
+		margin-right: 650px;
+		margin-top: -26px;
+	}
+	.contactus{
+		margin-top: -162px;
+		margin-left: 560px;
+
+	}
+		.followus{
+		margin-top: -155px;
+		margin-left: 800px;
+
+
+	}
+	.footer1{ 
+		width:1140px;
+		margin:auto;
+		height:50px;
+		background-color: black;
+}
+.copyright{
+	color:white;
+	margin-left: 450px;
+
+}
+
+
+</style>
+<script type="text/javascript">
+
+var image1=new Image();
+image1.src="image1.jpg" ;
+var image2=new Image() ;
+image2.src="image2.jpg" ;
+var image3=new Image() ;
+image3.src="image3.jpg" ;
+var image4=new Image();
+image4.src="slider1.jpg" ;
+var image5=new Image() ;
+image5.src="slider2.jpg" ;
+
+</script>
+</head>
+
+<body>
+	
+
+	<div class="box">
+	<div class="container">
+		<div class="logo">
+		<img src="headphone1logo.jpg" alt="logo" height="190" width="200" margin-bottom="20px">
+	</div>
+
+	<ul>
+		<li class="active"><a href="index.html" >  <img src="homebutton.png" alt="homebutton" width="25" height="25"> </a></li>
+		<li><a href="gallary.html">Gallary</a></li>
+		
+		<li class="dropdown">
+			<a href="gallary.html" class="dropdown-btn">Types of headphones</a>
+			<div class="dropdown-items">
+				<a href="gallary.html" target="_blank">&nbsp;Wireless</a>
+				<a href="gallary.html" target="_blank">&nbsp;Wire</a>
+				<a href="gallary.html" target="_blank">&nbsp;Best price</a>
+				
+			</div>
+		</li>
+		<li><a href="aboutus.html">About us</a></li>
+		<li><a href="contact.html">Contacts</a></li>
+		
+	</ul>
+	</div>
+
+			<div class="slideshowcontainer">
+			<img src="image1.jpg" name="slide" width="750" height="350">
+			<script>
+ 
+
+			var step=1
+			function slideit(){
+
+
+			if (!document.images)
+
+			return;
+
+			document.images.slide.src=eval("image"+step+".src");
+
+
+			
+			if (step<5)
+			step++;
+
+			else
+
+			step=1;
+
+
+			setTimeout("slideit()", 2500);
+
+			}
+			slideit()
+
+			</script>
+			</div>
+<div class="newcontain1">
+
+
+	<img src="design.png" alt="design" style="width:550px;" align="right" >
+
+
+
+<div class="ourproject">
+	<h1 style="color: #5249b8; ">FIND THE BEST</h1>
+	<h1 style="color: #5249b8; ">HEADPHONES</h1>
+	<h1 style="color: #5249b8; ">FOR YOUR NEEDS </h1>
+
+	<p><h2>Yes, there are newer models available,<br> but we still rate the Sony WH-1000XM4 <br> as the best headphones for most people <br>when balancing performance and price.<br>
+		The audio quality is rich and exuberant,<br>the noise cancellation is strong,<br>hey work wired or wireless, and <br>
+		they offer great battery life.<br></h2></p>
+</div>
+
+</div>
+
+<div class="newcontain2">
+
+
+
+
+
+	<div class="aboutus">
+	<h1 style="color: #5249b8">About us</h1>
+<p>The Dyson Zone headphones have great sound,<br>excellent noise canceling and the addition <br>
+	of a visor that can filter out pollution to help you breathe easy.<br>But at almost $1,000 they're a tough sell,<br>
+	especially for anyone who doesn't live or work<br>in a place like a major city, where<br>airborne pollution is an issue<br></p>
+<img src="images.jpg" alt="image" width="500" height="300" align="right" style="margin-top: -250px;">
+</div>
+</div>
+
+		<center>
+		<div class="smallheader">
+		<a href="gallary.html" style="text-decoration: none; color: black;"><h1 style="font-family: Vivaldi">To view our best headphones click me</h1></a><br><br><br><br><br>
+		</div>
+		</center>
+		</center>
+<h2>For further infromation get in touch with us through email</h2>
+</center>
+<div class="container1">
+  <form action="/action_page.php">
+    <label for="fname">Your Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Enter your Name">
+
+    <label for="lname">Your Email</label>
+    <input type="text" id="lname" name="lastname" placeholder="Enter your email address">
+   <input type="checkbox"  name="submit"> I agree all terms
+                </label>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+	<div class="footer">
+	
+	<div class="line"></div>
+	<div class="footerlogo">
+	<img src="headphone1logo.jpg" alt="logo" height="200" width="250">
+</div>
+<div class="menu">
+
+	<ul>
+		<ol style="font-size: 20px; color: #cbcfc8;">&nbsp;&nbsp;&nbsp;MENU</ol><br><br>
+		<ol style="color: #cbcfc8;"><a href="aboutus.html">About us</a></ol><br><br>
+		
+		<ol style="color: #cbcfc8;"><a href="contact.html">Process</a></ol><br><br>
+		<ol style="color: #cbcfc8;"><a href="contact.html">Contact us</a></ol><br><br>
+	</ul>
+
+</div>
+<div class="contactus">
+    <p style="font-size:20px;color: #cbcfc8;">CONTACT US</p>
+    <p style="color: #cbcfc8;">Call us</p>
+    <p style="color: #cbcfc8;">+977-9848940101</p>
+    <p style="color: #cbcfc8;">Mail us :<a href="https://www.gmail.com" target="_blank" style="color: #cbcfc8;"> headphones2021@gmail.com</p></a>
+
+</div>
+
+<div class="followus">
+	<p style="font-size:20px; color: #cbcfc8;">FOLLOW US</p>
+	<a href="https://www.facebook.com" target="_blank"><img src="facebook.png" style="padding: 10px;" ></a>
+	<a href="https://www.instagram.com" target="_blank"><img src="instagram.png" style="padding: 10px;"></a>
+
+</div>
+
+</div>
+<div class="footer1">
+	<div class="copyright">
+		<br>
+©Copyright, GFC.
+</div>
+
+</div>
+
+
+		
+	</div>
+</body>
+
+</html>

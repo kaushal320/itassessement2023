@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Headphones</title>
+
+<style>
+	.box{
+		margin:auto;
+		width:1140px;
+
+	}
+	.container{
+		position: fixed;
+		top:0;
+		min-width:1140px;
+		height:120px;
+		padding-top: 20px;
+		margin-bottom: 10px;
+		background-color: #2a0942;
+		z-index: 100;
+	}
+	.logo{
+		
+		margin-top: -70px;
+	}
+	
+	
+	
+	ul{
+		float:right;
+		list-style: none;
+		margin-top: -120px;
+		padding-right: 40px;
+		margin-right: 20px;
+
+
+	}
+
+	ul li {
+		display:inline-block;
+		
+	}
+	ul li a{
+		text-decoration: none;
+		color:#cbcfc8;
+		padding:5px 20px;
+	}
+	ul li a:hover{
+		background-color:#fefefe;
+		color:#000;
+	}
+
+	ul li.active a{
+		background-color: #ffffff;
+		color:#000;
+	}
+	.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+
+
+}
+	.dropdown{
+		position:relative;
+		display:inline-flex;
+	}
+	
+	.dropdown-items{
+		display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 180px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	top:30px;
+	}
+	.dropdown-items a{
+		color:black;
+		padding:12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+	}
+	.dropdown-items a:hover{
+		background-color:#ffffff;
+	}
+	.dropdown:hover .dropdown-items{
+		display:block;
+	}
+
+	.container1{
+		width: 1140px;
+		margin :auto;
+		height:100px;
+
+		
+	}
+	.text1{
+		color:#2a0942;
+		text-align: center;
+		font-size: 50px;
+		font-family: Freestyle Script;
+	}
+		.slideshow{
+		margin:auto;
+		height:300px;
+		margin-left: 240px;
+		
+	}
+	
+
+	
+	.text2{
+		font-size: 20px;
+	}
+	.container3{
+		width: 1140px;
+		margin :auto;
+		height:400px;
+
+	}
+	.footer{ 
+		width:1140px;
+		margin:auto;
+		height:300px;
+		background-color: #2a0942;
+}
+.line{
+	position:absolute;
+	border:2px solid #cbcfc8;
+	height:220px;
+	margin-left: 20px;
+	margin-top: 50px;
+}
+.ourproject{
+	margin-left: 60px;
+}
+.aboutus{
+	margin-left: 60px;
+}
+.footerlogo{
+	margin-left: 80px;
+}
+	ul{
+		list-style: none;
+		margin-top: -140px;
+		padding-right: 10px;
+		margin-right: 5px;
+
+
+	}
+
+	ul ol {
+		display:inline-block;
+		
+	}
+	ul ol a{
+		text-decoration: none;
+		color:#cbcfc8;
+		padding:15px 20px;
+	}
+	ul ol a:hover{
+		background-color:#2a0942;
+		color:#000;
+	}
+
+	ul ol.active a{
+		background-color: #2a0942;
+		color:#000;
+	}
+	.menu{
+		margin-right: 650px;
+	}
+	.contactus{
+		margin-top: -162px;
+		margin-left: 560px;
+
+	}
+		.followus{
+		margin-top: -155px;
+		margin-left: 800px;
+
+
+	}
+	.footer1{ 
+		width:1140px;
+		margin:auto;
+		height:50px;
+		background-color: black;
+}
+.copyright{
+	color:white;
+	margin-left: 450px;
+
+}
+	</style>
+<script type="text/javascript">
+
+var image1=new Image();
+image1.src="slider1.jpg" ;
+var image2=new Image() ;
+image2.src="slider2.jpg" ;
+var image3=new Image() ;
+image3.src="slider3.jpg" ;
+var image4=new Image() ;
+image4.src="image3.jpg" ;
+var image5=new Image() ;
+image5.src="image2.jpg" ;
+</script>
+</head>
+<body>
+	<div class="box">
+	<div class="container">
+		<div class="logo">
+			<img src="headphone1logo.jpg" alt="logo" height="190" width="200" margin-bottom="20px">
+	</div>
+
+	<ul>
+		<li><a href="index.html" >  <img src="homebutton.png" alt="homebutton" width="25" height="25"> </a></li>
+		<li class="active"><a href="gallary.html" >Gallary</a></li>
+		
+		<li class="dropdown">
+			<a href="gallary.html" class="dropdown-btn">Types of headphones</a>
+			<div class="dropdown-items">
+				<a href="#Kitchen" >&nbsp;Wireless</a>
+				<a href="#bedroom">&nbsp;Wire</a>
+				<a href="#bathroom">&nbsp;Best price</a>
+				
+			</div>
+		</li>
+		<li><a href="aboutus.html">About us</a></li>
+		<li><a href="contact.html">Contacts</a></li>
+		
+	</ul>
+	</div>
+<br><br><br><br>
+<div class="conatiner1">
+		<div class="text1">
+		<br><p>Our best ever headphones</p>
+	</div>
+		</div>
+			<div class="slideshow">	
+			<img src="slider1.jpg" name="slide" width="700" height="300" />
+
+			<script>
+
+
+			var step=1
+			function slideit(){
+
+
+			if (!document.images)
+
+			return;
+
+			document.images.slide.src=eval("image"+step+".src");
+
+
+			if (step<5)
+			step++;
+
+			else
+
+			step=1;
+
+
+			setTimeout("slideit()", 2500);
+
+			}
+			slideit()
+
+			</script>
+</div>
+
+
+	
+</div>
+
+<div class="container3">
+	<h1 style="font-family: Vivaldi;" id="livingroom">Wireless headphones</h1>
+	<div class="text2">
+		
+		<p><i> Shop high quality wireless headphones, wireless bluetooth earphones and bluetooth headset at best price across country.Buy Wireless Headphones at an discount of Upto 80% only at Nepal's Best Online Shopping Store.</i></p><br>
+	</div>
+	<a href="image26.jpg">
+	<img src="image26.jpg" alt="image26" style="width:260px; height:240px;" hspace="10px;"></a>
+	<a href="image27.jpg">
+	<img src="image27.jpg" alt="image27" style="width:260px; height:240px;" hspace="10px;"></a>
+	<a href="image28.jpg">
+	<img src="image28.jpg" alt="image28" style="width:260px; height:240px;" hspace="10px;"></a>
+	<a href="image29.jpg">
+	<img src="image29.jpg" alt="image29" style="width:260px; height:240px;" hspace="10px;"></a>
+</div>
+
+
+<div class="container3">
+	<h1 style="font-family: Vivaldi;" id="bathroom">Best price headphones</h1>
+	<div class="text2">
+		
+		<p><i>Buy best gaming headphones from brands like sony, jbl, canleen, msi, beats & many more. 1 Year Standard Warranty Delivery All Over Nepal</i></p><br><br>
+	</div>
+	<a href="image30.jpg">
+	<img src="image30.jpg" alt="image30" style="width:260px; height:240px;" hspace="10px;"></a>
+	<a href="image31.jpg">
+	<img src="image31.jpg" alt="image31" style="width:260px; height:240px;" hspace="10px;"></a>
+	<a href="image32.jpg">
+	<img src="image32.jpg" alt="image32" style="width:260px; height:240px;" hspace="10px;"></a>
+	<a href="image33.jpg">
+	<img src="image33.jpg" alt="image33" style="width:260px; height:240px;" hspace="10px;"></a>
+</div>
+
+<div class="container3">
+	<h1 style="font-family: Vivaldi;" id="bedroom">Wire</h1>
+	<div class="text2">
+		
+		<p><i>Pick wired headphones that do not run on batteries and are always prepared to play your favourite audio content. Wired headsets can give a better output.</i></p><br><br>
+	</div>
+	<a href="image34.jpg">
+	<img src="image34.jpg" alt="image34" style="width:260px; height:240px;" hspace="10px;"></a>
+	<a href="image35.jpg">
+	<img src="image35.jpg" alt="image35" style="width:260px; height:240px;" hspace="10px;"></a>
+	<a href="image36.jpg">
+	<img src="image36.jpg" alt="image36" style="width:260px; height:240px;" hspace="10px;"></a>
+	<a href="image37.jpg">
+	<img src="image37.jpg" alt="image37" style="width:260px; height:240px;" hspace="10px;"></a>
+</div><br><br><br>
+
+<div class="footer">
+	
+	<div class="line"></div>
+	<div class="footerlogo">
+	<img src="headphone1logo.jpg" alt="logo" height="200" width="250">
+</div>
+<div class="menu">
+
+	<ul>
+		<ol style="font-size: 20px; color: #cbcfc8;">&nbsp;&nbsp;&nbsp;MENU</ol><br><br>
+		<ol style="color: #cbcfc8;"><a href="aboutus.html">About us</a></ol><br><br>
+		
+		<ol style="color: #cbcfc8;"><a href="contact.html">Process</a></ol><br><br>
+		<ol style="color: #cbcfc8;"><a href="contact.html">Contact us</a></ol><br><br>
+	</ul>
+
+</div>
+<div class="contactus">
+    <p style="font-size:20px;color: #cbcfc8;">CONTACT US</p>
+    <p style="color: #cbcfc8;">Call us</p>
+    <p style="color: #cbcfc8;">+977-9848940101</p>
+    <p style="color: #cbcfc8;">Mail us :<a href="https://www.gmail.com" target="_blank" style="color: #cbcfc8;"> headphones2021@gmail.com</p></a>
+
+</div>
+
+<div class="followus">
+	<p style="font-size:20px; color: #cbcfc8;">FOLLOW US</p>
+	<a href="https://www.facebook.com" target="_blank"><img src="facebook.png" style="padding: 10px;" ></a>
+	<a href="https://www.instagram.com" target="_blank"><img src="instagram.png" style="padding: 10px;"></a>
+
+</div>
+
+</div>
+<div class="footer1">
+	<div class="copyright">
+		<br>
+©Copyright, GFC.
+</div>
+
+</div>
+
+
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>headphones</title>
+
+<style>
+	.box{
+		margin:auto;
+		width:1140px;
+
+	}
+	.container{
+		position: fixed;
+		top:0;
+		min-width:1140px;
+		height:120px;
+		padding-top: 20px;
+		margin-bottom: 10px;
+		background-color: #2a0942;
+		z-index: 100;
+	}
+	.logo{
+		
+		margin-top: -70px;
+	}
+	
+	
+	
+	ul{
+		float:right;
+		list-style: none;
+		margin-top: -120px;
+		padding-right: 40px;
+		margin-right: 20px;
+
+
+	}
+
+	ul li {
+		display:inline-block;
+		
+	}
+	ul li a{
+		text-decoration: none;
+		color:#cbcfc8;
+		padding:5px 20px;
+	}
+	ul li a:hover{
+		background-color:#ffffff;
+		color:#000;
+	}
+
+	ul li.active a{
+		background-color: #ffffff;
+		color:#000;
+	}
+	.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+
+
+}
+	.dropdown{
+		position:relative;
+		display:inline-flex;
+	}
+	
+	.dropdown-items{
+		display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 180px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	top:30px;
+	}
+	.dropdown-items a{
+		color:black;
+		padding:12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+	}
+	.dropdown-items a:hover{
+		background-color:#ffffff;
+	}
+	.dropdown:hover .dropdown-items{
+		display:block;
+	}
+	.container1{
+		
+
+position: relative;
+width: 1140px;
+top:80px;
+	}
+
+		
+
+	
+.container2{
+	position: relative;
+	margin-top:180px;
+
+
+
+}
+	.text2{
+		color:#000000;
+		
+		
+		
+	}
+	.map{
+		margin-top: -300px;
+		margin-left:380px;
+	}
+	.getconnected{
+		margin:auto;
+		
+	margin:auto;
+	width:300px;
+	height:250px;
+	margin-left:10px;
+	margin-top: 50px;
+
+	}
+
+	table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+
+}
+td, th {
+  border: 1px solid white;
+  text-align: left;
+  padding: 8px;
+    background-color: #ffffff;
+
+}
+
+.footer{ 
+		width:1140px;
+		margin:auto;
+		height:300px;
+		background-color: #2a0942;
+}
+.line{
+	position:absolute;
+	border:2px solid #cbcfc8;
+	height:220px;
+	margin-left: 20px;
+	margin-top: 50px;
+}
+.ourproject{
+	margin-left: 60px;
+}
+.aboutus{
+	margin-left: 60px;
+}
+.footerlogo{
+	margin-left: 80px;
+}
+	ul{
+		list-style: none;
+		margin-top: -140px;
+		padding-right: 10px;
+		margin-right: 5px;
+
+
+	}
+
+	ul ol {
+		display:inline-block;
+		
+	}
+	ul ol a{
+		text-decoration: none;
+		color:#cbcfc8;
+		padding:15px 20px;
+	}
+	ul ol a:hover{
+		background-color:#2a0942;
+		color:#000;
+	}
+
+	ul ol.active a{
+		background-color: #2a0942;
+		color:#000;
+	}
+	.menu{
+		margin-right: 650px;
+	}
+	.contactus{
+		margin-top: -162px;
+		margin-left: 560px;
+
+	}
+		.followus{
+		margin-top: -155px;
+		margin-left: 800px;
+
+
+	}
+	.footer1{ 
+		width:1140px;
+		margin:auto;
+		height:50px;
+		background-color: black;
+}
+.copyright{
+	color:white;
+	margin-left: 450px;
+
+}
+</style>
+<script type = "text/javascript">
+function validate() {
+if( document.myForm.Name.value == "" ) {
+alert( "Please provide your name!" ); document.myForm.Name.focus() ; return false;
+}
+if( document.myForm.EMail.value == "" ) {
+alert( "Please provide your Email!" ); document.myForm.EMail.focus() ; return false;
+}
+if( document.myForm.Zip.value == "" || isNaN( document.myForm.Zip.value ) ||
+document.myForm.Zip.value.length != 5 ) {
+alert( "Please provide a zip in the format #####." ); document.myForm.Zip.focus() ; return false;
+}
+if( document.myForm.Country.value == "-1" ) {
+alert( "Please provide your country!" ); return false;
+}
+return( true );
+}
+</script>
+</head>
+<body>
+	<div class="box">
+	<div class="container">
+		<div class="logo">
+			<img src="headphone1logo.jpg" alt="logo" height="190" width="200" margin-bottom="20px">
+	</div>
+
+	<ul>
+		<li><a href="index.html" >  <img src="homebutton.png" alt="homebutton" width="25" height="25"> </a></li>
+		<li><a href="gallary.html" >Gallary</a></li>
+		<li><a href="aboutus.html">About us</a></li>
+		<li class="dropdown">
+			<a href="gallary.html" class="dropdown-btn">Type of headphones</a>
+			<div class="dropdown-items">
+				<a href="gallary.html" target="_blank">&nbsp;Wireless</a>
+				<a href="gallary.html" target="_blank">&nbsp;Wire</a>
+				<a href="gallary.html" target="_blank">&nbsp;Best price</a>
+				
+			</div>
+		</li>
+		<li class="active"><a href="contact.html" >Contacts</a></li>
+		
+		
+	</ul>
+	</div>
+	<br>
+		<div class="container1">
+<img src="banner3.jpg" alt="banner3" align="right">
+<br>
+</div>
+<div class="container2" >
+<div class="text2">	
+	<h2>Contact Us</h2>
+
+<p><h3>We are looking forward to hear your opinions. Please fill out the contact form and we will follow up with you as soon as possible!</h3></p>
+</div><br><br><br><br><br>
+<form action = "next_page" name = "myForm" onsubmit = "return(validate());">
+	<table border = "5" bordercolor="black">
+	<tr>
+		<td>
+<table cellspacing = "2px" cellpadding = "2px" border = "1" >
+	<tr><th colspan="2"><center>Fill up the form</center></th></tr>
+<tr> <td align = "right">Your Name</td> <td><input type = "text" name = "Name" size="130" placeholder="Your name" /></td> </tr>
+<tr> <td align = "right">Your Email</td> <td><input type = "text" name = "Email" size="130" placeholder="Your email" /></td> </tr>
+<tr> <td align = "right">Number</td> <td><input type = "text" name = "Number" size="130" placeholder="Your number"/></td> </tr>
+<tr> <td align = "right">Subject</td> <td><input type = "subject" name = "subject" size="130"placeholder="Your subject" /></td> </tr>
+<tr> <td align = "right" >Message</td> <td><textarea type = "subject" name = "message" size="130" style="height: 150px; width: 900px;" placeholder="Any messages"/></textarea>
+<tr> <td align = "right">Loaction</td> <td>
+<select name = "Location" >
+<option value = "1">Maitighar</option>
+<option value = "2">satdobato</option>
+<option value = "3">bhaktapur</option>
+<option value = "4">Godawari</option>
+<option value = "5">kathmandu</option>
+</select>
+</td> </tr>
+<tr>  <td colspan="2"><center><input type = "submit" value = "Submit" style="padding:12px 100px; background-color: #0f4570; 
+cursor: pointer; color: white; " /></center></td> </tr>
+</table>
+</td>
+</tr>
+</table>
+</form>
+<br>
+
+<div class="getconnected">
+
+<h1 style="color: #0f4570">Get in touch</h1>
+
+<p>+977-9848940101</p>
+<p>Write us at</p>
+<a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" style="color: #0b0b0b; "> headphones2021@gmail.com</a>
+</div>
+<center>
+	<div class="map">
+<h1><i>Find us!</i></h1>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.978602844602!2d85.32069995077254!3d27.594192982754702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb173a77c570d9%3A0x7109a301291d4b8c!2sChapagaun%20Takhel!5e0!3m2!1sen!2snp!4v1600406537576!5m2!1sen!2snp" width="600" height="350" frameborder="0" style="border:0; " allowfullscreen="" aria-hidden="false" tabindex="0" ></iframe>
+</center>
+</div>
+</div>
+</div>
+<br>
+<div class="footer">
+	
+	<div class="line"></div>
+	<div class="footerlogo">
+	<img src="headphone1logo.jpg" alt="logo" height="200" width="250">
+</div>
+<div class="menu">
+
+	<ul>
+		<ol style="font-size: 20px; color: #cbcfc8;">&nbsp;&nbsp;&nbsp;MENU</ol><br><br>
+		<ol style="color: #cbcfc8;"><a href="aboutus.html">About us</a></ol><br><br>
+		
+		<ol style="color: #cbcfc8;"><a href="contact.html">Process</a></ol><br><br>
+		<ol style="color: #cbcfc8;"><a href="contact.html">Contact us</a></ol><br><br>
+	</ul>
+
+</div>
+<div class="contactus">
+    <p style="font-size:20px;color: #cbcfc8;">CONTACT US</p>
+    <p style="color: #cbcfc8;">Call us</p>
+    <p style="color: #cbcfc8;">+977-9848940101</p>
+    <p style="color: #cbcfc8;">Mail us :<a href="https://www.gmail.com" target="_blank" style="color: #cbcfc8;"> headphones2021@gmail.com</p></a>
+
+</div>
+
+<div class="followus">
+	<p style="font-size:20px; color: #cbcfc8;">FOLLOW US</p>
+	<a href="https://www.facebook.com" target="_blank"><img src="facebook.png" style="padding: 10px;" ></a>
+	<a href="https://www.instagram.com" target="_blank"><img src="instagram.png" style="padding: 10px;"></a>
+
+</div>
+
+</div>
+<div class="footer1">
+	<div class="copyright">
+		<br>
+©Copyright, GFC.
+</div>
+
+</div>
+
+
+		
+	</div>
+
+</body>
+</html>
